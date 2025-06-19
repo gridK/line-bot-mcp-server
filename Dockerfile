@@ -34,5 +34,6 @@ RUN npm ci --ignore-scripts --omit-dev
 # Now, switch to running as our non-root user for the actual app process
 USER appuser
 
+EXPOSE 3005
 # Define how to start the application
 ENTRYPOINT ["node", "dist/index.js"]
